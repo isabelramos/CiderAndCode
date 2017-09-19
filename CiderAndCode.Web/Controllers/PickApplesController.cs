@@ -5,6 +5,7 @@ using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using CiderAndCode.Web.DataModels;
+using CiderAndCode.Web.ViewModels;
 
 namespace CiderAndCode.Web.Controllers
 {
@@ -30,12 +31,5 @@ namespace CiderAndCode.Web.Controllers
             return Request.CreateResponse(HttpStatusCode.Created, newBushel);
         }
 
-    }
-
-    public class ApplesPickedRequest
-    {
-        public AppleType Type { get; set; }
-        public int NumberOfBushels { get; set; }
-        public int UserId { get; set; }
     }
 }
