@@ -2,7 +2,7 @@
 ## A Sophisticated Cider Bar for Coding Elite
 ### Technology is our Core
 
-[ ] Pick Apples from the on site orchard
+[x] Pick Apples from the on site orchard
 [ ] Donate a bushel of apples
 [ ] Make Cider
 [ ] Filter Cider into Juice
