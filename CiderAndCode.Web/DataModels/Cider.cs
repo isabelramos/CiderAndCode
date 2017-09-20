@@ -9,7 +9,7 @@ namespace CiderAndCode.Web.DataModels
         [Required]
         public AppleType Type { get; set; }
         public DateTime DatePressed { get; set; }
-        [Required,MaxLength(500)]
+        [MaxLength(500)]
         public string TastingNotes { get; set; }
         public virtual Bushel Bushel { get; set; }
         public bool Filtered { get; set; }

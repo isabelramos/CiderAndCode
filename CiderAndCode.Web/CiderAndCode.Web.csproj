@@ -155,6 +155,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\BushelController.cs" />
+    <Compile Include="Controllers\CiderController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\PickApplesController.cs" />
     <Compile Include="DataModels\AppDbContext.cs" />
@@ -175,8 +177,17 @@
     <Compile Include="Migrations\201709190135217_RequiredStuff.Designer.cs">
       <DependentUpon>201709190135217_RequiredStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201709200147265_pressedField.cs" />
+    <Compile Include="Migrations\201709200147265_pressedField.Designer.cs">
+      <DependentUpon>201709200147265_pressedField.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201709200207205_messeduptastingnotes.cs" />
+    <Compile Include="Migrations\201709200207205_messeduptastingnotes.Designer.cs">
+      <DependentUpon>201709200207205_messeduptastingnotes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\AppleResult.cs" />
     <Compile Include="ViewModels\ApplesPickedRequest.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -232,6 +243,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201709190135217_RequiredStuff.resx">
       <DependentUpon>201709190135217_RequiredStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709200147265_pressedField.resx">
+      <DependentUpon>201709200147265_pressedField.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201709200207205_messeduptastingnotes.resx">
+      <DependentUpon>201709200207205_messeduptastingnotes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

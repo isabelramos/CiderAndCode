@@ -9,7 +9,7 @@ using CiderAndCode.Web.ViewModels;
 
 namespace CiderAndCode.Web.Controllers
 {
-    [RoutePrefix("PickApples")]
+    [RoutePrefix("api/PickApples")]
     public class PickApplesController : ApiController
     {
         [Route(""), HttpPost]
