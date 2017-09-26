@@ -15,7 +15,7 @@ namespace CiderAndCode.Web.Controllers
         {
             var db = new AppDbContext();
 
-            var bushels = db.Bushels.Select(bushel => new ListBushelsRequest { BushelId = bushel.Id, Type = bushel.Type, Quantity = bushel.Quantity, Ripe = bushel.Ripe, Pressed = bushel.Pressed });
+            var bushels = db.Bushels.Select(bushel => new ListBushelsResult { PickerName = bushel.User.Name, Type = bushel.Type.ToString(), Quantity = bushel.Quantity, Ripe = bushel.Ripe, Pressed = bushel.Pressed });
 
             return Request.CreateResponse(HttpStatusCode.OK, bushels);
         }
