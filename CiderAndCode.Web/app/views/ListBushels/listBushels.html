@@ -1,0 +1,23 @@
+﻿<div id="bushels-container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Bushel picked by</th>
+                <th>Type of bushel</th>
+                <th>Quantity</th>
+                <th>Ripe</th>
+                <th>Pressed</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr id="bushel-info" ng-repeat="bushel in bushelInfo">
+                <td>{{bushel.BushelId}}</td>
+                <td>{{bushel.Type}}</td>
+                <td>{{bushel.Quantity}}</td>
+                <td>{{bushel.Ripe}}</td>
+                <td>{{bushel.Pressed}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

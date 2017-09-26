@@ -10,12 +10,12 @@ namespace CiderAndCode.Web.Controllers
     [RoutePrefix("api/Bushels")]
     public class BushelController : ApiController
     {
-        [HttpGet, Route("")]
+        [HttpGet, Route("list")]
         public HttpResponseMessage GetAllBushels()
         {
             var db = new AppDbContext();
 
-            var bushels = db.Bushels;
+            var bushels = db.Bushels.Select(bushel => new ListBushelsRequest { BushelId = bushel.Id, Type = bushel.Type, Quantity = bushel.Quantity, Ripe = bushel.Ripe, Pressed = bushel.Pressed });
 
             return Request.CreateResponse(HttpStatusCode.OK, bushels);
         }
